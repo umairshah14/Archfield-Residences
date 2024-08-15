@@ -1,0 +1,26 @@
+{
+    "desktopLinks": [
+      { "text": "Home", "href": "https://www.google.com" },
+      { "text": "About Us", "href": "https://www.google.com" }
+    ],
+    "dropdowns": [
+      {
+        "buttonText": "For Guests",
+        "links": [
+          { "text": "Corporate Housing", "href": "#" },
+          { "text": "Trade Accommodation", "href": "#" },
+          { "text": "Temporary Accommodation", "href": "#" }
+        ]
+      },
+      {
+        "buttonText": "For Landlords",
+        "links": [
+          { "text": "Guaranteed Rent in Watford", "href": "#" },
+          { "text": "Partnerships & Joint Ventures", "href": "#" },
+          { "text": "Invest With Us", "href": "#" },
+          { "text": "How It Works", "href": "#" }
+        ]
+      }
+    ]
+  }
+  
