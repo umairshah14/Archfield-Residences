@@ -7,3 +7,9 @@
     @apply text-black font-light;
   }
 }
+
+.fill {
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}

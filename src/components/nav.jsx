@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   Button,
   Popover,
@@ -12,13 +12,13 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/20/solid";
-import Logo from "@/images/black-long.svg";
+import Logo from "@/images/archfield-logos/black-long.svg";
 import Image from "next/image";
 import CustomBtn from "./button";
 import navData from "../json-files/nav-data.json";
 import { twMerge } from "tailwind-merge";
 import classNames from "classnames";
-import Carousel from "./carousel";
+// import Carousel from "./carousel";
 
 function PopoverWithChevron({ buttonText, children }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -40,9 +40,9 @@ function PopoverWithChevron({ buttonText, children }) {
         </PopoverButton>
         <PopoverPanel
           static
-          className={`absolute z-50 left-0 -mt-border border-opacity-10 shadow-lg border-black text-black rounded-md transition-all duration-200 ease-in-out transform origin-top ${
+          className={`absolute left-0 -mt-border border-opacity-10 shadow-lg border-black text-black rounded-md transition-all duration-200 ease-in-out transform origin-top ${
             isHovered
-              ? "opacity-100 scale-100 z-50"
+              ? "opacity-100 scale-100 bg-white"
               : "opacity-0 scale-95 pointer-events-none"
           }`}
         >
@@ -92,6 +92,7 @@ function MobilePopover({ buttonText, children }) {
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,6 +112,24 @@ export default function Nav() {
     } else {
       document.body.style.overflow = "";
     }
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    if (mobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [mobileMenuOpen]);
 
   return (
@@ -164,7 +183,7 @@ export default function Nav() {
               ))}
               <CustomBtn text={"Book Now"} />
             </div>
-            <div className="lg:hidden flex items-end justify-end text-black">
+            <div className="lg:hidden flex items-end justify-end text-black z-50">
               <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                 <span className="sr-only">Open main menu</span>
                 {mobileMenuOpen ? (
@@ -177,9 +196,15 @@ export default function Nav() {
           </div>
         </div>
 
+        {/* Overlay for darkening the background */}
+        {mobileMenuOpen && (
+          <div className="fixed inset-0 bg-black opacity-50 z-30"></div>
+        )}
+
         {/* Full-screen mobile menu */}
         <div
-          className={`fixed inset-0 z-40 bg-white transition-transform duration-300 ease-in-out mt-20 ${
+          ref={menuRef}
+          className={`fixed inset-0 z-40 bg-white transition-transform duration-200 ease-in-out shadow-lg border-r border-black/40 w-10/12 ${
             mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           } lg:hidden`}
         >
@@ -210,8 +235,10 @@ export default function Nav() {
                 ))}
               </div>
 
-              {/* Get in touch section */}
-              <Carousel/>
+              {/* <div className="flex flex-col text-center my-8">
+                <p className="text-4xl font-trirong">FIND US ON</p>
+                <Carousel />
+              </div> */}
             </div>
             <div className="p-4 border-t border-gray-300">
               <Button className="w-full bg-black px-4 py-3 text-white rounded-md">

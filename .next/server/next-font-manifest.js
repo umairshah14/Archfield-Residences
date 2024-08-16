@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/umairshah/Archfield-Residences/src/app/layout\":[\"static/media/a34f9d1faa5f3315-s.p.woff2\",\"static/media/be4dbde7f10bc465-s.p.woff2\",\"static/media/849989b558f974d0-s.p.woff2\",\"static/media/998812feb3669e62-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"

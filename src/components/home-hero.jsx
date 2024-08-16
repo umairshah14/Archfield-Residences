@@ -20,7 +20,7 @@ const HomeHero = () => {
         />
       </div>
       <div className="flex lg:flex-row flex-col-reverse justify-between gap-6">
-        <div className="w-full lg:w-1/3 flex flex-col gap-8 leading-7">
+        <div className="w-full lg:w-2/5 flex flex-col gap-8 leading-7">
           <p>
             Welcome to Archfield Residences, your ideal destination for top-tier
             serviced accommodation. Whether you're a guest seeking a comfortable
