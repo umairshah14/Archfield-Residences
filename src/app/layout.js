@@ -1,19 +1,21 @@
 import { Inter, Krona_One, Trirong } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/nav";
+import Script from "next/script";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const kronaOne = Krona_One({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-krona-one',
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-krona-one",
 });
 const trirong = Trirong({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-trirong',
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-trirong",
 });
 
 export const metadata = {
@@ -23,10 +25,40 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${kronaOne.variable} ${trirong.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${kronaOne.variable} ${trirong.variable}`}
+    >
       <body className={`w-full bg-white ${inter.className}`}>
-        <Nav/>
+        <Nav />
         {children}
+        <Script id="openwidget" strategy="afterInteractive">
+          {`
+            window.__ow = window.__ow || {};
+            window.__ow.organizationId = "19c01a9c-e90d-4431-a7f8-92198eba31d6";
+            window.__ow.integration_name = "manual_settings";
+            window.__ow.product_name = "openwidget";
+            (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+          `}
+        </Script>
+        <Footer/>
+        <noscript>
+          You need to{" "}
+          <a
+            href="https://www.openwidget.com/enable-javascript"
+            rel="noopener nofollow"
+          >
+            enable JavaScript
+          </a>{" "}
+          to use the communication tool powered by{" "}
+          <a
+            href="https://www.openwidget.com/"
+            rel="noopener nofollow"
+            target="_blank"
+          >
+            OpenWidget
+          </a>
+        </noscript>
       </body>
     </html>
   );

@@ -1,0 +1,33 @@
+{
+  "title": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "How Do I Check In?",
+      "answer": "Access to our apartments is completely self-service and hassle free. The exact check-in process will be clearly detailed in the instructions sent on the day of arrival."
+    },
+    {
+      "question": "What Are The Check-In & Check-Out Times?",
+      "answer": "Check-In is from 3:00 pm and Check-Out is at 10:00 am. We may be able to accommodate an earlier check-in or later check-out, subject to availability. If you wish to do this, please give us at least 24 hours notice."
+    },
+    {
+      "question": "What is KeyNest?",
+      "answer": "For some properties, we use KeyNest to store keys. KeyNest is a local store with a secure key safe. You’ll receive check-in instructions with the store location and collection code. KeyNest offers a simple, secure, and efficient self-service check-in."
+    },
+    {
+      "question": "What Are Key Safes?",
+      "answer": "For security, we use key safes to store keys before your arrival. These secure metal boxes are accessed via a combination lock. You'll find the key safe near the property, with instructions provided for the location and combination. Key safes are widely used in the hospitality industry for smooth, self-service check-ins."
+    },
+    {
+      "question": "Can I Extend My Booking?",
+      "answer": "Absolutely! If availabilities allow, bookings can be extended as per the nightly rate for the extension dates. Please contact us at least 24 hours in advance to give you the best chance of us accommodating an extended stay."
+    },
+    {
+      "question": "Do You Take A Security Deposit?",
+      "answer": "We require a £250 security deposit, processed as a pre-authorisation one day before arrival. No money is taken from your card, but it may appear on your balance. This deposit is released within 2 days after check-out, pending a property inspection. If any damage is found or terms are violated, the corresponding amount will be charged."
+    },
+    {
+      "question": "Can We Smoke Inside The Apartments?",
+      "answer": "No. Smoking in any of our properties is strictly prohibited. This is due to health and safety and to main the properties standards."
+    }
+  ]
+}

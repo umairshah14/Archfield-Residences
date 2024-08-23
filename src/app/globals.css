@@ -13,3 +13,37 @@
   position: relative;
   left: calc(-50vw + 50%);
 }
+
+h1{
+  font-family: var(--font-trirong);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2{
+  font-family: var(--font-trirong);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2{
+  font-family: var(--font-trirong);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h3{
+  font-family: var(--font-trirong);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h6{
+  font-family: var(--font-trirong);
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+p{
+  line-height: 1.75rem;
+}

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Airbnb from "@/images/ota-logos/airbnb-logo.wine-AE0pR2yb7bS4aX7P.svg";
-import BDC from "@/images/ota-logos/booking.com-logo.wine-mePLz5X7QEipbRK0.svg";
-import Expedia from "@/images/ota-logos/expedia-logo.wine-mePLz5X7QkS1rJVX.svg";
-import VRBO from "@/images/ota-logos/vrbo-logo.svg";
-import HomeLike from "@/images/ota-logos/homelike.png";
-import TripAdvisor from "@/images/ota-logos/tripadvisor-seeklogo.svg";
+import Airbnb from "../../public/images/ota-logos/airbnb-logo.wine-AE0pR2yb7bS4aX7P.svg";
+import BDC from "../../public/images/ota-logos/booking.com-logo.wine-mePLz5X7QEipbRK0.svg";
+import Expedia from "../../public/images/ota-logos/expedia-logo.wine-mePLz5X7QkS1rJVX.svg";
+import VRBO from "../../public/images/ota-logos/vrbo-logo.svg";
+import HomeLike from "../../public/images/ota-logos/homelike.png";
+import TripAdvisor from "../../public/images/ota-logos/tripadvisor-seeklogo.svg";
 
 const Carousel = () => {
   const logos = [

@@ -1,0 +1,21 @@
+{
+    "title": "WHAT WE OFFER",
+    "blocks": [
+      {
+        "title": "STAFF & CORPORATE ACCOMMODATION",
+        "description": "We specialise in providing accommodation suited to business staff, contractors and working professionals. With this in mind we aim to make sure that all our properties have every necessary amenity needed to make your stay as comfortable as possible.",
+        "imageSrc": "/images/white-star.svg"
+      },
+      {
+        "title": "GUEST STAYS",
+        "description": "Experience the epitome of comfort with Archfield Residences, offering a home away from home that caters to both short and mid-term stays. Whether you're seeking a stylish space to work, play, or unwind, we've got you covered at one of our serviced accommodations.",
+        "imageSrc": "/images/white-star.svg"
+      },
+      {
+        "title": "NATIONAL COVERAGE",
+        "description": "We have a dedicated team that sources bespoke accommodation for staff and guests across the entire UK. Whether you need a 1-bedroom flat or a 7-bedroom house, we have something for everyone.",
+        "imageSrc": "/images/white-star.svg"
+      }
+    ]
+  }
+  

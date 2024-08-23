@@ -1,0 +1,26 @@
+{
+    "title": "WHY CHOOSE US?",
+    "blocks": [
+      {
+        "imageSrc": "/images/icons/lock.svg",
+        "title": "SAFETY ASSURANCE",
+        "description": "All our bookings are conducted through a secure and safe process."
+      },
+      {
+        "imageSrc": "/images/icons/team.svg",
+        "title": "EXPERT TEAM",
+        "description": "Our team is dedicated to delivering top-notch services."
+      },
+      {
+        "imageSrc": "/images/icons/piggy-bank.svg",
+        "title": "AFFORDABLE RATES",
+        "description": "All of our services come at pocket-friendly customer prices."
+      },
+      {
+        "imageSrc": "/images/icons/id.svg",
+        "title": "CLIENT VETTING",
+        "description": "We ensure to verify all guests staying with us before arrival."
+      }
+    ]
+  }
+  

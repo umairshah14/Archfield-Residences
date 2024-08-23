@@ -1,0 +1,25 @@
+{
+    "title": "Why stay with us?",
+    "blocks": [
+      {
+        "title": "SECURED PAYMENTS",
+        "description": "Our accreditation ensures that your transactions and payments are fully protected, providing a guarantee of 100% security.",
+        "imageSrc": "/images/icons/skinnyLock.svg",
+        "imageAlt": "Skinny Lock"
+      },
+      {
+        "title": "FLEXIBLE BOOKINGS",
+        "description": "Opt for direct booking to receive personalised advice on the property that aligns best with your needs and dates. Booking directly also grants you access to our best rate guarantee, ensuring you secure the most favorable rates.",
+        "imageSrc": "/images/icons/calendar.svg",
+        "imageAlt": "calendar"
+      },
+      {
+        "title": "TAILORED SERVICES",
+        "description": "Making a direct reservation ensures a personalised service, allowing us to make every effort to meet and satisfy any additional requests or requirements you may have.",
+        "imageSrc": "/images/icons/notepad.svg",
+        "imageAlt": "notepad"
+      }
+    ],
+    "CTA": "Book Now"
+  }
+  

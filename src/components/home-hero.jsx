@@ -1,15 +1,22 @@
+'use client'
+
 import Image from "next/image";
 import React from "react";
-import BlackKitchen from "@/images/black-kitchen.avif";
-import BlackStar from "@/images/black-star.svg";
+import BlackKitchen from "../../public/images/property/black-kitchen.avif";
+import BlackStar from "../../public/images/black-star.svg";
+import useInView from "@/hooks/useInView";
 
 const HomeHero = () => {
+  const [ref, isInView] = useInView({
+    threshold: 0.1, // Trigger when 10% of the component is visible
+  });
   return (
-    <div className="flex flex-col text-black gap-6 lg:gap-10 ">
+    <div className="flex flex-col text-black gap-6 lg:gap-10 px-4 lg:px-0"
+    >
       <div className="flex flex-row justify-between items-center">
         <div className="flex flex-col gap-3">
           <p className="text-xl lg:text-2xl font-trirong pl-2">Say hello, to your</p>
-          <p className="font-krona text-4xl sm:text-5xl lg:text-6xl">HOME FROM HOME</p>
+          <p className="font-krona text-4xl sm:text-5xl lg:text-7xl">HOME FROM HOME</p>
         </div>
         <Image
           src={BlackStar}

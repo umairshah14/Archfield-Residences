@@ -1,26 +1,28 @@
 {
-    "desktopLinks": [
-      { "text": "Home", "href": "https://www.google.com" },
-      { "text": "About Us", "href": "https://www.google.com" }
-    ],
-    "dropdowns": [
-      {
-        "buttonText": "For Guests",
-        "links": [
-          { "text": "Corporate Housing", "href": "#" },
-          { "text": "Trade Accommodation", "href": "#" },
-          { "text": "Temporary Accommodation", "href": "#" }
-        ]
-      },
-      {
-        "buttonText": "For Landlords",
-        "links": [
-          { "text": "Guaranteed Rent in Watford", "href": "#" },
-          { "text": "Partnerships & Joint Ventures", "href": "#" },
-          { "text": "Invest With Us", "href": "#" },
-          { "text": "How It Works", "href": "#" }
-        ]
-      }
-    ]
-  }
-  
+  "desktopLinks": [
+    { "text": "Home", "href": "/", "icon": "HomeIcon" },
+    { "text": "About Us", "href": "/about-us", "icon": "InformationCircleIcon" }
+  ],
+  "dropdowns": [
+    {
+      "buttonText": "For Guests",
+      "href": "/for-guests",
+      "icon": "UserGroupIcon",
+      "links": [
+        { "text": "Corporate Housing", "href": "/for-guests/corporate-housing" },
+        { "text": "Trade Accommodation", "href": "/for-guests/trade-accommodation" },
+        { "text": "Temporary Accommodation", "href": "/for-guests/temporary-accommodation" }
+      ]
+    },
+    {
+      "buttonText": "For Landlords",
+      "icon": "KeyIcon",
+      "links": [
+        { "text": "Guaranteed Rent in Watford", "href": "/for-landlords/guaranteed-rent-watford" },
+        { "text": "Partnerships & Joint Ventures", "href": "/for-landlords/partnerships-joint-ventures" },
+        { "text": "Invest With Us", "href": "/for-landlords/invest-with-us" },
+        { "text": "How It Works", "href": "/for-landlords/how-it-works" }
+      ]
+    }
+  ]
+}
